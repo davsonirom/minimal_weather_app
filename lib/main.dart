@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minimal_weather_app/page/weather_page.dart';
 
 void main() {
   runApp(const MiaSoftware39());
@@ -10,12 +11,13 @@ class MiaSoftware39 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Minimal Weather',
+      debugShowCheckedModeBanner: true,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const SizedBox.shrink(),
+      home: const WeatherPage(),
     );
   }
 }
